@@ -7,7 +7,7 @@ import 'primeicons/primeicons.css';
 import { PrimeReactProvider } from 'primereact/api';
 
 export const metadata: Metadata = {
-  title: "Imgur Search",
+  title: "Image Search",
   description: "Search for images and gifs using Imgur's API",
 };
 
