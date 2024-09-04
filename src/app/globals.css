@@ -1,0 +1,39 @@
+@layer tailwind-base, primereact, tailwind-utilities;
+
+/* IMPORTANT: In "styled" mode you must add the PrimeReact Theme here. Do NOT include in "unstyled" mode */
+@import 'primereact/resources/themes/lara-light-blue/theme.css' layer(primereact);
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+:root {
+  --foreground-hex: #FFFFFF;
+  --grid-background-hex: #f0f0f0;
+  --background-raised-hex: 214, 219, 220;
+  --background-hex: #FFFFFF;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-hex: #FFFFFF;
+    --grid-background-hex: #121212;
+    --background-raised-hex: #FFFFFF;
+    --background-hex: #121212;
+  }
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  background-color: var(--background-hex);
+}
